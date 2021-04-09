@@ -9,15 +9,62 @@ class Home extends StatelessWidget {
       child: Container(
         alignment: Alignment.center,
         color: Colors.deepOrangeAccent,
-        child: Text(
-          "Pizza",
-          textDirection: TextDirection.ltr,
-          style: TextStyle(
-            fontSize: 30.0,
-            decoration: TextDecoration.none,
-            fontFamily: 'Oxygen',
-            fontWeight: FontWeight.w300
-          ),
+        padding: EdgeInsets.only(top: 30, left: 10),
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    "Margerita",
+                    textDirection: TextDirection.ltr,
+                    style: TextStyle(
+                        fontSize: 30.0,
+                        decoration: TextDecoration.none,
+                        fontFamily: 'Oxygen',
+                        fontWeight: FontWeight.w300),
+                  ),
+                ),
+                Expanded(
+                  child: Text(
+                    "Tomato, Mozzarela, Basil",
+                    textDirection: TextDirection.ltr,
+                    style: TextStyle(
+                        fontSize: 20.0,
+                        decoration: TextDecoration.none,
+                        fontFamily: 'Oxygen',
+                        fontWeight: FontWeight.w300),
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    "Marinara",
+                    textDirection: TextDirection.ltr,
+                    style: TextStyle(
+                        fontSize: 30.0,
+                        decoration: TextDecoration.none,
+                        fontFamily: 'Oxygen',
+                        fontWeight: FontWeight.w300),
+                  ),
+                ),
+                Expanded(
+                  child: Text(
+                    "Tomato, Garlic",
+                    textDirection: TextDirection.ltr,
+                    style: TextStyle(
+                        fontSize: 20.0,
+                        decoration: TextDecoration.none,
+                        fontFamily: 'Oxygen',
+                        fontWeight: FontWeight.w300),
+                  ),
+                ),
+              ],
+            )
+          ],
         ),
       ),
     );
